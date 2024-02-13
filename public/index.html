@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day13-of-nodejs-challenge-completed!</title>
+</head>
+<body>
+  <input type="text" id="messageInput" placeholder="Type a message...">
+  <button onclick="sendMessage()">Send</button>
+  <div id="output"></div>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:3000/websocket');
+
+    ws.onopen = function() {
+      console.log('Connected to WebSocket server');
+    };
+
+    ws.onmessage = function(event) {
+      console.log('Received message: ', event.data);
+      document.getElementById('output').innerText = event.data;
+    };
+
+    function sendMessage() {
+      const message = document.getElementById('messageInput').value;
+      ws.send(message);
+    }
+  </script>
+</body>
+</html>
