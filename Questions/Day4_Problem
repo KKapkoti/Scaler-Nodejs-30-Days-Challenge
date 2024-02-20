@@ -6,9 +6,11 @@ Function Signature:
 function resolvePath(relativePath) {
     // Implementation
 }
+
 Expected Output:
 
 Resolved Path: /Users/username/project/folder/file.txt
+
 Test Cases:
 
 resolvePath('../project/folder/file.txt');
