@@ -5,13 +5,14 @@ Create a function `readFileContent(filePath)` that takes the path to a file as i
 
 **Function Signature:**
 ```javascript
+
 function readFileContent(filePath) {
     // Implementation
 }
 ```
 
 **Expected Output:**
-```
+
 File Content:
 This is the content of the file.
 Hello, Node.js!
