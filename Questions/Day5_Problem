@@ -6,9 +6,13 @@ Function Signature:
 function checkFileExtension(filePath, expectedExtension) {
     // Implementation
 }
+
+
 Expected Output:
 
 File has the expected extension: .txt
+
+
 Test Cases:
 
 checkFileExtension('test-files/file1.txt', '.txt');
