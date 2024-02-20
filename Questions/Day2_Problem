@@ -6,9 +6,13 @@ Function Signature:
 function writeToFile(filePath, content) {
     // Implementation
 }
+
+
 Expected Output:
 
 Data written to output.txt
+
+
 Test Cases:
 
 writeToFile('test-files/output1.txt', 'Sample content.');
