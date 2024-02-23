@@ -61,7 +61,7 @@ async function updateProduct(id){
     const updatedProduct = await product.save()
     console.log(updatedProduct)
 }
-updateProduct('65d6f752e196e2eaa0029512');
+updateProduct('65d6f752e196e2eaa0029512');what
 
 
 //Deletes a product from MongoDB--------------------------------
